@@ -1,27 +1,37 @@
 🚀 Servidor Web Simples (HTTP 1.1) em Python
-Este repositório contém os arquivos desenvolvidos para a atividade de Redes, cujo objetivo principal foi implementar um servidor Web básico em Python, utilizando a biblioteca socket para gerenciar a comunicação na Camada de Transporte (TCP) e o Protocolo de Aplicação (HTTP).
 
-✨ O que este Servidor Faz
-O servidor demonstra a capacidade de atender a requisições HTTP e gerenciar o fluxo de rede de forma eficiente.
+Este repositório contém a implementação de um servidor web básico em Python, desenvolvido para atividades da disciplina de Redes.
+O objetivo principal é demonstrar o funcionamento do protocolo HTTP, utilizando sockets TCP para gerenciar a comunicação na camada de transporte.
 
-🛠️ Funcionalidades Implementadas
-Socket TCP: Utiliza AF_INET e SOCK_STREAM para criar um socket de escuta TCP.
+✨ O que este servidor faz?
 
-Protocolo HTTP: Processa requisições GET e retorna respostas formatadas para o cliente.
+O servidor é capaz de:
 
-Porta Não-Padrão: Executa na porta 6789, conforme exigido, evitando conflitos com a porta 80 padrão.
+Atender requisições HTTP GET
 
-Respostas de Status:
+Gerenciar o fluxo de rede usando TCP
 
-200 OK: Retorno para o arquivo HelloWorld.html encontrado.
+Enviar respostas formatadas corretamente
 
-404 Not Found: Retorno para recursos inexistentes, tratado via except IOError.
+Servir arquivos estáticos como páginas HTML
 
-Controle de Fluxo: Utiliza a lógica \r\n para delimitar cabeçalhos e o corpo da mensagem.
+Retornar erros adequados (ex: 404)
 
-📶 Compatibilidade e Testes de Rede
-O servidor foi projetado para ser robusto em diferentes ambientes de rede:
+🧩 Funcionalidades Implementadas
+🔌 Socket TCP
 
-Vinculação Ampla: Está vinculado a todas as interfaces (0.0.0.0), garantindo acesso via localhost e IP de rede local (ex: 192.168.225.82).
+Uso de AF_INET (IPv4) e SOCK_STREAM (TCP)
 
-Hospedeiros Diferentes: Foi comprovada a capacidade de acesso por outros dispositivos dentro da rede, confirmando a correta configuração do bind e superando bloqueios de Firewall com sucesso.
+Criação de um servidor de escuta confiável
+
+🌐 Protocolo HTTP
+
+Processamento de requisições GET
+
+Geração de respostas com cabeçalhos HTTP válidos
+
+Tratamento de exceções como arquivos inexistentes
+
+🔢 Porta Não-Padrão
+
+O servidor utiliza a porta 6789, evitando conflitos com portas padrão como 80
