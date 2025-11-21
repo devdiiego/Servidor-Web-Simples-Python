@@ -1,4 +1,4 @@
-# 🚀 Servidor Web Simples (HTTP 1.1) em Python
+# 🌐 Servidor Web Simples (HTTP 1.1) em Python
 
 Este repositório contém a implementação de um servidor web básico em Python, desenvolvido para atividades da disciplina de Redes.
 O objetivo principal é demonstrar o funcionamento do protocolo HTTP, utilizando sockets TCP para gerenciar a comunicação na camada de transporte.
